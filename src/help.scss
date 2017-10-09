@@ -1,0 +1,34 @@
+$panel-border: #E7E7E7;
+$panel-text: darken($panel-border, 60%);
+
+.topic{
+  display: block;
+  margin-bottom: 1em;
+  padding: 10px;
+  background-color: transparent;
+  width: 51.5em;
+  font-size: 87.5%;
+  color: $panel-text;
+  position: relative;
+  margin-top: 10px;
+  border: 2px solid $panel-border;
+  border-radius: 3px;
+  // &:before {
+  //   bottom: 100%;
+  //   left: 50px;
+  //   border: solid transparent;
+  //   content: " ";
+  //   height: 0;
+  //   width: 0;
+  //   position: absolute;
+  //   pointer-events: none;
+  //   border-bottom-color: $panel-border;
+  //   border-width: 10px;
+  //   margin-left: -36px;
+  // }
+}
+
+.buttonControl-group {
+  display: inline;
+  margin-left: 5px;
+}
