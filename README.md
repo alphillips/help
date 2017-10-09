@@ -14,10 +14,10 @@ import Help from '@react-ag-components/help'
 ```
 
 ```
-const helperText = 'Select Automatic if you like your certificate(s) to be issued after submission or Hold if you would like to preview your certificate before it is issued. Certificate Preview can be performed after submission on the REX details screen.';
+const text = 'Select Automatic if you like your certificate(s) to be issued after submission or Hold if you would like to preview your certificate before it is issued. Certificate Preview can be performed after submission on the REX details screen.';
 <Help
-  helperText={helperText}
-  helperLabel="Tell me more..."
+  text={text}
+  label="Tell me more..."
 />
 ```
 
@@ -25,8 +25,8 @@ const helperText = 'Select Automatic if you like your certificate(s) to be issue
 
 | Property    | Default       | Description                                |
 | --------    |:-------------:|-------------------------------------------:|
-| helperText  | ""            |                                            |
-| helperLabel | "Help"        |    clicking on label, toggles helperText   |
+| text        | ""            |                                            |
+| label       | "Help"        |    clicking on label, toggles helperText   |
 
 
 ## Contributing
