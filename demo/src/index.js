@@ -20,7 +20,7 @@ class Demo extends Component {
   }
 
   render() {
-    const helperText = 'Select Automatic if you like your certificate(s) to be issued after submission or Hold if you would like to preview your certificate before it is issued. Certificate Preview can be performed after submission on the REX details screen.';
+    const text = 'Select Automatic if you like your certificate(s) to be issued after submission or Hold if you would like to preview your certificate before it is issued. Certificate Preview can be performed after submission on the REX details screen.';
     return (
       <div>
       <h1>Help</h1>
@@ -28,14 +28,14 @@ class Demo extends Component {
       <h2>Basic Help</h2>
         <p>The following options impact when your certificate(s) are generated.
         <Help
-          helperText={helperText} />
+          text={text} />
         </p>
 
       <h2>Custom help label</h2>
       <p>The following options impact when your certificate(s) are generated.
         <Help
-          helperText={helperText}
-          helperLabel="Tell me more..." />
+          text={text}
+          label="Tell me more..." />
       </p>
       </div>
     )
