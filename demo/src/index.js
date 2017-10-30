@@ -36,8 +36,8 @@ class Demo extends Component {
         <Help
           text={text}
           label="Tell me more..."
-          anchorClassName="small-des"
-          contentClassName="body-des" />
+          labelClass="small-des"
+          bodyClass="body-des" />
       </p>
       </div>
     )

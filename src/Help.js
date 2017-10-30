@@ -22,11 +22,11 @@ class Help extends React.Component {
     let contentClassName = this.props.contentClassName || '';
     return (
       <span className="buttonControl-group">
-        <a onClick={() => this.onClick()} href="javascript:void(0)" className={anchorClassName} aria-controls="t1" aria-expanded="true" >
+        <a onClick={() => this.onClick()} href="javascript:void(0)" className={labelClass} aria-controls="t1" aria-expanded="true" >
           <span>{label}</span>
         </a>
         {this.state.helpVisible ?
-          <span className={"topic " + contentClassName} role="region" tabIndex="0" data-id="help-description">
+          <span className={"topic " + bodyClass} role="region" tabIndex="0" data-id="help-description">
             <span>{this.props.text}</span>
           </span>
           : null}
