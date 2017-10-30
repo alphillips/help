@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './ui-kit.css'
 import './help.css';
 
 class Help extends React.Component {
@@ -18,8 +17,8 @@ class Help extends React.Component {
 
   render() {
     let label = this.props.label || 'Help';
-		let anchorClassName = this.props.anchorClassName || '';
-    let contentClassName = this.props.contentClassName || '';
+		let labelClass = this.props.labelClass || '';
+    let bodyClass = this.props.bodyClass || '';
     return (
       <span className="buttonControl-group">
         <a onClick={() => this.onClick()} href="javascript:void(0)" className={labelClass} aria-controls="t1" aria-expanded="true" >
