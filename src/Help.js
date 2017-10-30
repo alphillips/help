@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './ui-kit.css'
 import './help.css';
 
 class Help extends React.Component {
@@ -18,13 +17,15 @@ class Help extends React.Component {
 
   render() {
     let label = this.props.label || 'Help';
+		let labelClass = this.props.labelClass || '';
+    let bodyClass = this.props.bodyClass || '';
     return (
       <span className="buttonControl-group">
-        <a onClick={() => this.onClick()} href="javascript:void(0)" className="buttonControl anchor" aria-controls="t1" aria-expanded="true" >
+        <a onClick={() => this.onClick()} href="javascript:void(0)" className={labelClass} aria-controls="t1" aria-expanded="true" >
           <span>{label}</span>
         </a>
         {this.state.helpVisible ?
-          <span className="topic" role="region" tabIndex="0" data-id="help-description">
+          <span className={"topic " + bodyClass} role="region" tabIndex="0" data-id="help-description">
             <span>{this.props.text}</span>
           </span>
           : null}
