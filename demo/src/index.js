@@ -35,7 +35,9 @@ class Demo extends Component {
       <p>The following options impact when your certificate(s) are generated.
         <Help
           text={text}
-          label="Tell me more..." />
+          label="Tell me more..."
+          anchorClassName="small-des"
+          contentClassName="body-des" />
       </p>
       </div>
     )
