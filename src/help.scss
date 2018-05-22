@@ -17,3 +17,7 @@ $panel-text: darken($panel-border, 60%);
   display: inline;
   margin-left: 5px;
 }
+
+.buttonControl-clear {
+  clear:both;
+}
