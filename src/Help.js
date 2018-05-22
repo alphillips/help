@@ -30,6 +30,7 @@ class Help extends React.Component {
           </span>
           : null}
       </span>
+			<div className="buttonControl-clear"></div>
     );
   }
 }
