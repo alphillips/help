@@ -20,17 +20,19 @@ class Help extends React.Component {
 		let labelClass = this.props.labelClass || '';
     let bodyClass = this.props.bodyClass || '';
     return (
-      <span className="buttonControl-group">
-        <a onClick={() => this.onClick()} href="javascript:void(0)" className={labelClass} aria-controls="t1" aria-expanded="true" >
-          <span>{label}</span>
-        </a>
-        {this.state.helpVisible ?
-          <span className={"topic " + bodyClass} role="region" tabIndex="0" data-id="help-description">
-            <span>{this.props.text}</span>
-          </span>
-          : null}
-      </span>
-			<div className="buttonControl-clear"></div>
+			<div>
+	      <span className="buttonControl-group">
+	        <a onClick={() => this.onClick()} href="javascript:void(0)" className={labelClass} aria-controls="t1" aria-expanded="true" >
+	          <span>{label}</span>
+	        </a>
+	        {this.state.helpVisible ?
+	          <span className={"topic " + bodyClass} role="region" tabIndex="0" data-id="help-description">
+	            <span>{this.props.text}</span>
+	          </span>
+	          : null}
+	      </span>
+				<div className="buttonControl-clear"></div>
+			</div>
     );
   }
 }
