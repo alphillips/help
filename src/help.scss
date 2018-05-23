@@ -13,7 +13,16 @@ $panel-text: darken($panel-border, 60%);
   border-radius: 3px;
 }
 
-.buttonControl-group {
+.buttonControl-group-container {
   display: inline;
-  margin-left: 5px;
+
+  .buttonControl-group {
+    display: inline;
+    margin-left: 5px;
+
+    a {
+      cursor: pointer;
+    }
+  }
+
 }

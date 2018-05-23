@@ -26,10 +26,10 @@ class Demo extends Component {
         <h1>Help</h1>
 
         <h2>Basic Help</h2>
-          <p>The following options impact when your certificate(s) are generated.
-          <Help
-            text={text} />
-          </p>
+
+        <p>The following options impact when your certificate(s) are generated.
+          <Help text={text} />
+        </p>
 
         <h2>Custom help label</h2>
         <p>The following options impact when your certificate(s) are generated.
@@ -39,6 +39,15 @@ class Demo extends Component {
             labelClass="small-des"
             bodyClass="body-des" />
         </p>
+
+        <h2>help next to input</h2>
+        <input className="input-object" label="hello" />
+        <Help
+          text={text}
+          label="Tell me more..."
+          labelClass="small-des"
+          bodyClass="body-des" />
+
         <div className="btn-group">
           <button className="uikit-btn uikit-btn--tertiary" onClick={this.handleBack}>Back</button>
           <button className="uikit-btn main-btn" onClick={this.handleNext}>Next</button>

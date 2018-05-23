@@ -9,6 +9,10 @@
   border: 2px solid #E7E7E7;
   border-radius: 3px; }
 
-.buttonControl-group {
-  display: inline;
-  margin-left: 5px; }
+.buttonControl-group-container {
+  display: inline; }
+  .buttonControl-group-container .buttonControl-group {
+    display: inline;
+    margin-left: 5px; }
+    .buttonControl-group-container .buttonControl-group a {
+      cursor: pointer; }
