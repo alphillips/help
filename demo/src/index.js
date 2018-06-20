@@ -21,6 +21,7 @@ class Demo extends Component {
 
   render() {
     const text = 'Select Automatic if you like your certificate(s) to be issued after submission or Hold if you would like to preview your certificate before it is issued. Certificate Preview can be performed after submission on the REX details screen.';
+    const htmltext = '<p>Select Automatic if you like your certificate(s) to be issued after submission or Hold if you would like to preview your certificate before it is issued. Certificate Preview can be performed after submission on the REX details screen.</p>';
     return (
       <div>
         <h1>Help</h1>
@@ -43,7 +44,7 @@ class Demo extends Component {
         <h2>help next to input</h2>
         <input className="input-object" label="hello" />
         <Help
-          text={text}
+          text={htmltext}
           label="Tell me more..."
           labelClass="small-des"
           bodyClass="body-des" />

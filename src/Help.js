@@ -29,7 +29,7 @@ class Help extends React.Component {
 	      </span>
 				{this.state.helpVisible ?
 				<span className={"topic " + bodyClass} role="region" tabIndex="0" data-id="help-description">
-					<span>{this.props.text}</span>
+					<span dangerouslySetInnerHTML={{ __html: this.props.text }} />
 				</span>
 				: null}
 			</span>
